@@ -1,0 +1,133 @@
+@import url(https://fonts.google.com/share?selection.family=Roboto:ital,wght@400;500;700;0,900);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{    
+    background: url(images/netflix-background.jpg);    
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;
+    height: 100vh;    
+    
+}
+
+
+
+body::after{
+    content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#002f4b,#4f2c25);
+       opacity: .5; 
+        z-index: -1;
+}
+
+.header {
+    padding: 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signIn {
+    background-color: red;
+    padding: 7px 15px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+
+}
+
+.language-btn {
+    padding: 7px 15px;
+    border-radius: 5px;
+    border: 1px rgb(176, 176, 176) solid;
+    border: 1px solid rgb(161, 161, 161);
+    background-color: transparent;
+    color:white;
+    cursor: pointer;
+   
+}
+
+.fa-caret-down {
+    font-size: 0.7em;
+    color: white;
+    margin-left: 5px;
+    
+}
+
+.fa-globe{
+    font-size: 0.7em;
+    margin-right: 5px;
+}
+
+.hero-section {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 80vh; 
+    width: 100%;
+}
+
+.hero-txt {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 44px;
+    
+}
+h4 {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+p{
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+input {
+    text-align: left;
+}
+
+input[type=email] {
+    padding:8px 12px 8px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    border: 1px solid rgb(161, 161, 161);
+    background-color: transparent;
+    color:white;
+    width: 250px;
+   
+    
+}
+
+input::placeholder {
+ text-align: left;
+}
+
+input[type=submit] {
+    padding: 8px 16px;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    
+}
